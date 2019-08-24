@@ -1,49 +1,87 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Outline </title>
-    <link rel="stylesheet" src="CSS/test.scss">
-    <link rel="js/script" src="JS/test.js">
-
-
-    <style>
-        #Periodic td {
-            /* width: 35px;
-            border: 1px solid black;
-            padding: 1px;
-            margin: 1px;
-            text-align: center; */
-            border: 1px solid black;
-            background-color: #0ff;
-            padding: 1px;
-            margin: 1px;
-        }
-    </style>
-    </style>
+    <meta charset="utf-8" />
+    <meta name="author" content="Mark J Collins" />
+    <meta name="description" content="Sample HTML document" />
+    <title>HTML5 Sample</title>
+    <link rel="stylesheet" type="text/css" href="CSS/chap9.css">
 
 </head>
 
 <body>
-    <form>
-        <p>Please select your preferred contact method:</p>
+    <h1 class="h1">Chapter 1</h1>
+    <header>
+        <p>welcome to the first lesson folks!</p>
+    </header>
+    <nav>
+        <h1 class="h1">Navigation</h1>
+        <ul class="ulStyle">
+            <li><a href="#">Home</a></li>
+            <li><a href="#footer">footer</a></li>
 
-        <input type="radio" id="contactChoice1" name="contact" value="email">
-        <label for="contactChoice1">Email</label>
+        </ul>
+    </nav>
+    <section>
+        <h1>Top-level</h1>
+        <section>
+            <h2>New York Yankees Starting Lineup</h2>
+            <details>
+                <summary>This content is collapsed</summary>
+                <dl>
 
-        <input type="radio" id="contactChoice2" name="sd" value="phone">
-        <label for="contactChoice2">Phone</label>
+                    <dt>Designated Hitter</dt>
+                    <dd>Rodriguez, DH</dd>
+                    <dt>Pitchers</dt>
+                    <dd>Gausman, R</dd>
+                    <dd>Wilson, R</dd>
+                    <dd>Tillman, R</dd>
+                    <dd>Price, L</dd>
+                    <dd>Porcello, R</dd>
+                </dl>
+                <dl>
+                    <dt>Hicks, LF</dt>
+                    <dt>Ellsbury, CF</dt>
+                    <dt>Ackley, RF</dt>
+                    <dd>Outfielders - the positions in baseball that are played in the grassy area behind the diamond,
+                        known as the outfield. These positions include the Left Fielder, Center Fielder, and Right
+                        Fielder.</dd>
+                </dl>
+            </details>
+            <main>
+                <h1>Main content</h1>
+                <section class="secInSec">
+                    <h1>Featured content</h1>
+                    <p>
+                        This is some <br />
+                        special <br>empty</br> text
+                    </p>
+                    <blockquote cite="www.apress.com">
+                        <h1>Quotation</h1>
+                        <p>This is a quotation</p>
+                    </blockquote>
+                    <p>paragraph 1</p>
+                    <hr />
+                    <p>paragraph 2</p>
+                </section>
+            </main>
 
-        <input type="radio" id="contactChoice3" name="xs" value="mail">
-        <label for="contactChoice3">Mail</label>
-        </div>
+        </section>
 
-        <button type="submit">Submit</button>
-        </div>
-    </form>
+    </section>
+    <footer id="footer">
+        <p>Closing content</p>
+        <address>
+            <p>Provided by
+                <a href="mailto:mcollins@theCreativePeople.com">Mark J. Collins</a>
+            </p>
+            <p>For more information
+                <a href="http://www.theCreativePeople.com">visit his website</a>
+            </p>
+        </address>
+    </footer>
 </body>
 
 </html>
