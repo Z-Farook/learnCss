@@ -1,6 +1,6 @@
 /* using selecter for html elements */
 
-/* bod element */
+/* element element start*/
 body {
   margin: 0.5in;
   background-color: darkgray;
@@ -15,25 +15,68 @@ nav{
     border-color: blue
 }
 
-.ulStyle{
-    list-style-type: none;
-}
 nav ul li a{
     color: rgb(25, 92, 218);
    
 }
-.h1 {
-color: rgb(25, 92, 218);
-  text-align: center;
-  font-size: 1.5rem
-}
+
 section{
     background-color: cadetblue
+}
+/* class selecter  */
+.h1 {
+    color: rgb(25, 92, 218);
+      text-align: center;
+      font-size: 1.5rem
+    }
+.ulStyle{
+    list-style-type: none;
 }
 .secInSec{
     background-color: black;
     color: white;
 }
 /* selcting all elements which have ID ATTRIBUTE with the FOOTER */
-[id='footer']{
+
+/* attribute selecter */
+[id="footer"]{
     background-color: rgb(63, 75, 97)}
+
+    /* Using ~ ANY title attribuute wich contains the word "xyz" iin the value will get the bg color*/
+[title~="xyz"]{
+    background-color: gold;
+}
+
+/* using | require that the value defined should be *whole word* in the HTML element.
+   So, it shoud be either *alone*, like class="top", or followed by a hyphen ( - ), like class="top-text"!
+   otherwisse it will not work. 
+*/
+[class|="book"]{
+    background-color: red;
+}
+
+ /* using ^ do not require The value does not have to be a  *whole word* it  is  */
+ [class^="para"]{
+     background-color: rgb(109, 14, 252);
+     font-weight: bold;
+     color: black
+ }
+/* The [attribute$="value"] selector is used to select elements whose attribute value ends with a specified value.
+   The value does not have to be a whole word! 
+*/
+ [class$="bute"]{
+    background-color: rgb(142, 91, 219);
+    
+ }
+
+ /* The [attribute*="value"] selector is used to select elements whose attribute value contains a specified value.
+ Note: The value does not have to be a whole word!   */
+ [class*="*"]{
+  background-color: rgb(91, 219, 134);
+ }
+
+ /* select all elements with the attribute "href" */
+ [href]{
+     color: rgb(36, 11, 179);
+    font-weight: bold
+ }
