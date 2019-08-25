@@ -20,15 +20,14 @@ div:nth-child(2) {
     color: black;
     padding: 20px;    
  }
- 
-
- /* if acivate this it override he previous nth-child(2) */
+  /* if acivate this it override he previous nth-child(2) */
     /* div:last-child {
     background-color: rgb(0, 110, 255);
     border-style: dashed;
     color: black;
     padding: 20px;
     }   */
+
 /* using selecter for html elements */
 /* element element start*/
 body {
