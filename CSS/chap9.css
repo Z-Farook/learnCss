@@ -28,6 +28,38 @@ div:nth-child(2) {
     padding: 20px;
     }   */
 
+/* wroking with pseudo ELEMENTS */
+p::before{
+  content: "           <- I (this text) am added trough 'P::before'   "; 
+  /* keep wihte space */
+  white-space:pre;
+  border-style: outset;
+  background-color: rgb(219, 219, 180)
+} 
+p::after{
+  content: "           <- I (this text) am added trough 'P::after'"; 
+  /* keep wihte space */
+  white-space:pre;
+  border-style: outset;
+  background-color: rgb(219, 219, 180)
+}
+p::first-letter {
+  color: red;
+  font-size: .3in;
+  font-weight: bold;
+  border-style: dashed
+}
+/* Selects the first line of every <p> element  */
+/* p::first-line {
+  color: rgb(255, 0, 200);
+} */
+
+/* Colors when user select something in on screen like for copy paste */
+::selection {
+  color: rgb(14, 17, 15); 
+  background: rgb(11, 209, 44);
+}
+
 /* using selecter for html elements */
 /* element element start*/
 body {
@@ -61,8 +93,8 @@ section {
   list-style-type: none;
 }
 .secInSec {
-  background-color: black;
-  color: white;
+  background-color: rgb(148, 220, 223);
+  
 }
 /* selcting all elements which have ID ATTRIBUTE with the FOOTER */
 
