@@ -12,103 +12,114 @@
 </head>
 
 <body>
+    <!-- Element for element and Class Selectors  -->
+    <p class="feat">I am tested with "1" class selector combinators</p>
+    <p class="feat new">I am tested with "2" class selector combinators</p>
+    <form action="" method="get">
+        <input type="submit" value="Send">
+    </form>
+
     <!-- test pseudo classes for styling -->
     <!-- <div>
         i am parten
         <div>I am last child</div>
     </div> -->
-    <header>
-        <p>Hi i am being tested</p>
-    </header>
+    <!--added a main div for collapsing in vscode (for more space)   -->
     <div>
-        i am parten
-        <div> I am 1st child: nth-child(1)</div>
-        <div> I am 2nd child: nth-child(2)</div>
-    </div>
-    <!-- some style using class selecter-->
-    <h1 class="h1">Chapter 1</h1>
-    <header class="para">
-        welcome to the first lesson folks!
-    </header>
-    <br>
-    <a href="#">Fist href</a>
-    <!-- some style using  class$=myValue  -->
-    <p class="dollerAtribute"> I am used for $ singn!</p>
-    <p class="dollerAtri-bute"> I am used for $ singn!</p>
-    <p class="dollerAtri bute"> I am used for $ singn!</p>
-    <nav>
+        <header>
+            <p>Hi i am being tested</p>
+        </header>
+        <div>
+            i am parten
+            <div> I am 1st child: nth-child(1)</div>
+            <div> I am 2nd child: nth-child(2)</div>
+        </div>
         <!-- some style using class selecter-->
-        <h1 class="h1">Navigation</h1>
-        <!-- some style using class selecter-->
-        <ul class="ulStyle">
-            <li><a href="#">Home</a></li>
-            <li><a href="#footer">footer</a></li>
-        </ul>
-    </nav>
-    <a href="c">3rd href</a>
-    <p class="withAttri*"> I am used for * singn!</p>
-    <p class="*withAttri"> I am used for * singn!</p>
-    <p class="withAt*tri"> I am used for * singn!</p>
-    <a href="b">2nd href</a>
-    <section>
-        <h1>Top-level</h1>
+        <h1 class="h1">Chapter 1</h1>
+        <header class="para">
+            welcome to the first lesson folks!
+        </header>
+        <br>
+        <a href="#">Fist href</a>
+        <!-- some style using  class$=myValue  -->
+        <p class="dollerAtribute"> I am used for $ singn!</p>
+        <p class="dollerAtri-bute"> I am used for $ singn!</p>
+        <p class="dollerAtri bute"> I am used for $ singn!</p>
+        <nav>
+            <!-- some style using class selecter-->
+            <h1 class="h1">Navigation</h1>
+            <!-- some style using class selecter-->
+            <ul class="ulStyle">
+                <li><a href="#">Home</a></li>
+                <li><a href="#footer">footer</a></li>
+            </ul>
+        </nav>
+        <a href="c">3rd href</a>
+        <p class="withAttri*"> I am used for * singn!</p>
+        <p class="*withAttri"> I am used for * singn!</p>
+        <p class="withAt*tri"> I am used for * singn!</p>
+        <a href="b">2nd href</a>
         <section>
-            <h2>New York Yankees Starting Lineup</h2>
-            <details open>
-                <summary>This content is collapsed</summary>
-                <dl>
-                    <!-- some style using class selecter class|=myVal -->
-                    <dt class="book-titles">Designated Hitter</dt>
-                    <dd>Rodriguez, DH</dd>
-                    <!-- some style using title~=myValue  -->
-                    <dt title="xyz hi">Pitchers</dt>
-                    <dd title="hixyz hi">Gausman, R</dd>
-                    <dd>Wilson, R</dd>
-                    <dd>Tillman, R</dd>
-                    <dd>Price, L</dd>
-                    <dd>Porcello, R</dd>
-                </dl>
-                <dl>
-                    <dt>Hicks, LF</dt>
-                    <dt>Ellsbury, CF</dt>
-                    <dt>Ackley, RF</dt>
-                    <dd>Outfielders - the positions in baseball that are played in the grassy area behind the diamond,
-                        known as the outfield. These positions include the Left Fielder, Center Fielder, and Right
-                        Fielder.</dd>
-                </dl>
-            </details>
-            <main>
-                <h1>Main content</h1>
-                <!-- some style using class selecter-->
-                <section class="secInSec">
-                    <h1>Featured content</h1>
-                    <p>
-                        This is some <br />
-                        special <br>empty</br> text
-                    </p>
-                    <blockquote cite="www.apress.com">
-                        <h1>Quotation</h1>
-                        <p>This is a quotation</p>
-                    </blockquote>
-                    <p>paragraph 1</p>
-                    <hr />
-                    <p>paragraph 2</p>
-                </section>
-            </main>
+            <h1>Top-level</h1>
+            <section>
+                <h2>New York Yankees Starting Lineup</h2>
+                <details open>
+                    <summary>This content is collapsed</summary>
+                    <dl>
+                        <!-- some style using class selecter class|=myVal -->
+                        <dt class="book-titles">Designated Hitter</dt>
+                        <dd>Rodriguez, DH</dd>
+                        <!-- some style using title~=myValue  -->
+                        <dt title="xyz hi">Pitchers</dt>
+                        <dd title="hixyz hi">Gausman, R</dd>
+                        <dd>Wilson, R</dd>
+                        <dd>Tillman, R</dd>
+                        <dd>Price, L</dd>
+                        <dd>Porcello, R</dd>
+                    </dl>
+                    <dl>
+                        <dt>Hicks, LF</dt>
+                        <dt>Ellsbury, CF</dt>
+                        <dt>Ackley, RF</dt>
+                        <dd>Outfielders - the positions in baseball that are played in the grassy area behind the
+                            diamond,
+                            known as the outfield. These positions include the Left Fielder, Center Fielder, and Right
+                            Fielder.</dd>
+                    </dl>
+                </details>
+                <main>
+                    <h1>Main content</h1>
+                    <!-- some style using class selecter-->
+                    <section class="secInSec">
+                        <h1>Featured content</h1>
+                        <p>
+                            This is some <br />
+                            special <br>empty</br> text
+                        </p>
+                        <blockquote cite="www.apress.com">
+                            <h1>Quotation</h1>
+                            <p>This is a quotation</p>
+                        </blockquote>
+                        <p>paragraph 1</p>
+                        <hr />
+                        <p>paragraph 2</p>
+                    </section>
+                </main>
+            </section>
         </section>
-    </section>
-    <!-- some style using id selecter [id='footer']-->
-    <footer id="footer">
-        <p>Closing content</p>
-        <address>
-            <p>Provided by
-                <a href="mailto:mcollins@theCreativePeople.com">Mark J. Collins</a>
-            </p>
-            <p>For more information
-                <a href="http://www.theCreativePeople.com">visit his website</a>
-            </p>
-        </address>
-    </footer>
+        <!-- some style using id selecter [id='footer']-->
+        <footer id="footer">
+            <p>Closing content</p>
+            <address>
+                <p>Provided by
+                    <a href="mailto:mcollins@theCreativePeople.com">Mark J. Collins</a>
+                </p>
+                <p>For more information
+                    <a href="http://www.theCreativePeople.com">visit his website</a>
+                </p>
+            </address>
+        </footer>
+    </div>
 </body>
 
 </html>
