@@ -1,3 +1,27 @@
+/* Combining Element and Class Selectors */
+
+p.feat{
+  background-color: yellow 
+}
+/* The DOT sign works Grouping So, in html are 2 calsses is == class="feat new"  */
+p.feat.new{
+  background-color: rgb(255, 157, 0) 
+}
+/* when clicked in the input field set the color */
+.featured:focus {
+background-color: rgb(69, 18, 235);
+}
+/* the input type is set to submit in html file (mean it is a button). so the button will be in green  */
+input:default {
+background-color: rgb(39, 197, 18);
+}
+/* grouping the selecctors */
+dl * {
+  /* note here above after "h2" a *SPACE* is defines=d which is == descendant defination */
+  background: rgb(69, 8, 150)
+}
+
+
 /* pseudo classes */
 a:visited {
   color: rgb(103, 153, 79);
