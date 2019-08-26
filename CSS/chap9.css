@@ -59,7 +59,12 @@ p::first-letter {
   color: rgb(14, 17, 15); 
   background: rgb(11, 209, 44);
 }
-
+/* Select more specifically */
+header p::before {
+ content:"Important! ";
+ font-weight:bold;
+ color:rgb(25, 0, 255);
+}
 /* using selecter for html elements */
 /* element element start*/
 body {
