@@ -7,11 +7,24 @@
     <meta charset="utf-8" />
     <meta name="author" content="Mark J Collins" />
     <meta name="description" content="Sample HTML document" />
+    <!-- this line  also helps the media quries -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML5 Sample</title>
     <link rel="stylesheet" type="text/css" href="CSS/chap9.css">
 </head>
 
 <body>
+
+    <h1>I am tested with media <b>quries</b> for "min and max width" </h1>
+    <!-- element for ":not pseudo class selector and styling -->
+    <section>
+        <img style="margin: 0 auto;" src="https://www.mediacollege.com/internet/html/images/image-tag1.gif"
+            alt="no cover image ">
+        <p>I am a paragraph.</p>
+        <p class="fancy">I am so very fancy! But the not selector do not style me :P</p>
+        <div>I am NOT a paragraph.</div>
+    </section>
+
     <!-- Element for element and Class Selectors  -->
     <p class="feat">I am tested with "1" class selector combinators</p>
     <p class="feat new">I am tested with "2" class selector combinators</p>
