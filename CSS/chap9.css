@@ -1,5 +1,14 @@
-/* Combining Element and Class Selectors */
 
+
+                                      /* the not selector */
+
+/* Set all 'P' in 'section' to green except' a with class named fancy */
+section p:not(.fancy) {
+    color: green;
+    font-size: 2em;
+    }
+
+/* Combining Element and Class Selectors */
 p.feat{
   background-color: yellow 
 }
@@ -52,27 +61,27 @@ div:nth-child(2) {
     padding: 20px;
     }   */
 
-/* wroking with pseudo ELEMENTS */
-p::before{
+                        /* wroking with pseudo ELEMENTS */
+/* p::before{
   content: "           <- I (this text) am added trough 'P::before'   "; 
-  /* keep wihte space */
+   
   white-space:pre;
   border-style: outset;
   background-color: rgb(219, 219, 180)
 } 
 p::after{
   content: "           <- I (this text) am added trough 'P::after'"; 
-  /* keep wihte space */
+  
   white-space:pre;
   border-style: outset;
   background-color: rgb(219, 219, 180)
-}
+}  
 p::first-letter {
   color: red;
   font-size: .3in;
   font-weight: bold;
   border-style: dashed
-}
+}*/
 /* Selects the first line of every <p> element  */
 /* p::first-line {
   color: rgb(255, 0, 200);
@@ -89,7 +98,7 @@ header p::before {
  font-weight:bold;
  color:rgb(25, 0, 255);
 }
-/* using selecter for html elements */
+                                      /* using selecter for html elements */
 /* element element start*/
 body {
   margin: 0.5in;
@@ -125,7 +134,7 @@ section {
   background-color: rgb(148, 220, 223);
   
 }
-/* selcting all elements which have ID ATTRIBUTE with the FOOTER */
+                                  /* selcting all elements which have ID ATTRIBUTE with the FOOTER */
 
 /* attribute selecter */
 [id="footer"] {
@@ -168,4 +177,32 @@ section {
 [href] {
   color: rgb(36, 11, 179);
   font-weight: bold;
+}
+
+
+/* media query */
+@media print
+{
+  img /* image is inline element that said to align this make it block level*/
+  {
+  width: 2in;
+  height: 2in;
+  display: block;
+  margin: 0 auto;
+  }
+}
+
+/* screen here says that it only appl to screen and not other tihngs like Print or so on */
+@media screen and (max-device-width: 600px) {
+  /* max mean < or ==  600px then do the following*/
+ h1 {
+    background: rgb(221, 13, 13);
+  }
+}
+@media screen and (min-device-width: 600px) {
+ /* min means > or == 600px then do the following*/
+  h1 {
+    background: rgb(72, 221, 13);
+    font-size: 2rem
+  }
 }
