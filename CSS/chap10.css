@@ -1,0 +1,22 @@
+ /* givess border and space with full width*/
+div, span {
+    border: 1px solid rgb(51, 15, 15);
+    margin: 2px;
+ }
+
+/*  gives width and color to a div having this class */
+.container{
+    border: 1px dashed sandybrown;
+    padding:3px;
+    width: 150px;
+    
+    margin: auto  
+}
+.nestedContainer{
+    border: 1px solid rgb(228, 15, 15);
+    text-align: center;
+    margin: 1px
+}
+.container pre::after{
+    content: " <== I am a block level dive with custom width ";
+}
