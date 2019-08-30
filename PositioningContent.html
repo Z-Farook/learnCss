@@ -9,6 +9,60 @@
 </head>
 
 <body>
+    <!-- content based "WIDHT" with *min-content*-->
+    <p>content based "WIDHT" with *min-content*</p>
+    <div class="contentBasedWidth-minContent">container
+        <div>Fourscore and 20 years ago,</div>
+        <div>our fathers brought forth to this continent</div>
+        <div>a new nation, conceived in liberty</div>
+        <div>and dedicated to the proposition</div>
+        <div>that all men are created equal</div>
+        <div>Now we are engaged in a great civil war, testing where that nation, or any</div>
+        <div>nation, so conceived, so dedicated, can long endure.</div>
+    </div>
+    <br>
+    <!-- end content based "WIDHT" with *min-content*-->
+
+    <!-- content based "WIDHT" with *max-content*-->
+    <p>content based "WIDHT" with *max-content*</p>
+    <div class="contentBasedWidth">container
+        <div>Fourscore and 20 years ago,</div>
+        <div>our fathers brought forth to this continent</div>
+        <div>a new nation, conceived in liberty</div>
+        <div>and dedicated to the proposition</div>
+        <div>that all men are created equal</div>
+        <div>Now we are engaged in a great civil war, testing where that nation, or any</div>
+        <div>nation, so conceived, so dedicated, can long endure.</div>
+    </div>
+    <br>
+    <!-- end content based "WIDHT" with *max-content*-->
+
+    <!-- Overrun fix solution -->
+    <div class="noOverrun">
+        container
+        <div>
+            <p>By removing the height attribute, the vertical overrun is solved. By replacing width with max-width,
+                if the window size is reduced, the container will shrink as needed to fit into the current window. </p>
+        </div>
+        <div>our fathers brought forth to this continent</div>
+        <div>a new nation, conceived in liberty</div>
+        <div>and dedicated to the proposition</div>
+        <div>that all men are created equal</div>
+        <div>Now we are engaged in a great civil war, testing where that nation, or any</div>
+        <div>nation, so conceived, so dedicated, can long endure.</div>
+    </div>
+    <br>
+    <!-- End Overrun fix solution -->
+
+    <!-- Relative size container -->
+    <div>
+        <div class="relativeSize">
+            <p> I taking 70% of my parent place!</p>
+        </div>
+    </div>
+    <br>
+    <!-- End relative size container -->
+
     <!-- Container overflowing problem because of poor math of "width & height"  -->
     <div class="overFlowContainer">container
         <div>div a</div>
@@ -21,7 +75,6 @@
     <br>
     <br>
     <!-- end Container overflowing -->
-
 
     <div>div 1</div>
     <div>div 2</div>
