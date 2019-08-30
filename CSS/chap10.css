@@ -1,3 +1,9 @@
+ /*Container overfling because of fixed width and height  */
+ .overFlowContainer{
+    width: 150px;
+    height: 100px;
+ }
+
  /* givess border and space with full width*/
 div, span {
     border: 1px solid rgb(51, 15, 15);
@@ -8,8 +14,7 @@ div, span {
 .container{
     border: 1px dashed sandybrown;
     padding:3px;
-    width: 150px;
-    
+    width: 450px;    
     margin: auto  
 }
 .nestedContainer{
