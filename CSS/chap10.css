@@ -1,67 +1,78 @@
+/* keep the image caption  as wide as img element. 
+This will make the width of caption == img tag width
+*/
+figure {
+  border: 2px black solid;
+  margin: 1px;
+  width: -moz-max-content; /* this is only for the moz browser*/
+  width: min-content;
+}
+
 /* Work around form IE to make the width of a dive "based on text width" */
 .grandParent {
-    border: none;
-    margin: 0px;
-    display: -ms-grid;
-    -ms-grid-columns: min-content;
-   }
+  border: none;
+  margin: 0px;
+  display: -ms-grid;
+  -ms-grid-columns: min-content;
+}
 
-.contentBasedWidth-minContent{
-    width: min-content;
-    height: min-content;
-    width: -moz-min-content;
-    height: -moz-min-content;
-    background:rgb(108, 129, 197);    
+.contentBasedWidth-minContent {
+  width: min-content;
+  height: min-content;
+  width: -moz-min-content;
+  height: -moz-min-content;
+  background: rgb(108, 129, 197);
 }
 
 /* content based "WIDHT" */
-.contentBasedWidth{
-    width: max-content;
-    height: max-content;
-    width: -moz-max-content;
-    height: -moz-max-content;
-    background:rgb(108, 129, 197); 
+.contentBasedWidth {
+  width: max-content;
+  height: max-content;
+  width: -moz-max-content;
+  height: -moz-max-content;
+  background: rgb(108, 129, 197);
 }
 /* how to fix vertical overrn remove Height attribute */
-.noOverrun{
-    max-width: 300px;
+.noOverrun {
+  max-width: 300px;
 }
-.noOverrun p{
-    color: blue;
-    padding: 3px
+.noOverrun p {
+  color: blue;
+  padding: 3px;
 }
 /* Sizing in relative manner (also helpful when responsive style are needed */
-.relativeSize{
-    width: 70%;
-    height: 70%;
- }
+.relativeSize {
+  width: 70%;
+  height: 70%;
+}
 /*Container overfling because of fixed width and height  */
- .overFlowContainer{
-    width: 150px;
-    height: 100px;
- }
+.overFlowContainer {
+  width: 150px;
+  height: 100px;
+}
 
- /* givess border and space with full width*/
-div, span {
-    border: 1px solid rgb(51, 15, 15);
-    margin: 2px;
- }
+/* givess border and space with full width*/
+div,
+span {
+  border: 1px solid rgb(51, 15, 15);
+  margin: 2px;
+}
 
 /*  gives width and color to a div having this class */
-.container{
-    border: 1px dashed sandybrown;
-    padding:3px;
-    width: 450px;    
-    margin: auto  
+.container {
+  border: 1px dashed sandybrown;
+  padding: 3px;
+  width: 450px;
+  margin: auto;
 }
-.nestedContainer{
-    border: 1px solid rgb(228, 15, 15);
-    text-align: center;
-    margin: 1px
+.nestedContainer {
+  border: 1px solid rgb(228, 15, 15);
+  text-align: center;
+  margin: 1px;
 }
-.container pre::after{
-    content: " <== I am a block level dive with custom width ";
+.container pre::after {
+  content: " <== I am a block level dive with custom width ";
 }
-body{
-    background-color: gray;
+body {
+  background-color: gray;
 }
