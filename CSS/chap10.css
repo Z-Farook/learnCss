@@ -1,3 +1,26 @@
+/* Box sizing: to see how much space an element actually takes (not just its content) */
+section{
+    border: 2px solid rgb(231, 20, 12);
+} 
+
+* { /*With this rule, all sizing attributes will include the padding and border.*/
+    box-sizing: border-box;
+   }
+article {
+    width: 300px;
+    height: 60px;
+    margin: 1px;
+   
+   }
+   .bigBorder {
+    padding: 30px;
+    border: 10px solid rgb(0, 128, 38);
+   }
+   .smallBorder {
+    padding: 5px;
+    border: 2px solid rgb(9, 199, 158);
+   }
+
 /* keep the image caption  as wide as img element. 
 This will make the width of caption == img tag width
 */
