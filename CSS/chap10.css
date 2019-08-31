@@ -1,3 +1,11 @@
+/* Work around form IE to make the width of a dive "based on text width" */
+.grandParent {
+    border: none;
+    margin: 0px;
+    display: -ms-grid;
+    -ms-grid-columns: min-content;
+   }
+
 .contentBasedWidth-minContent{
     width: min-content;
     height: min-content;

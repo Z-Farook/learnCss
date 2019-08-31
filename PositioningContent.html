@@ -9,8 +9,25 @@
 </head>
 
 <body>
+    <!-- strat of work around dive for IE -->
+    <p>IE Work Around:Neither IE nor Edge support the min-content and max-content attributes, as of this writing.
+        However, <b> there is a workaround using the custom -ms-grid</b> attribute. <u> You have to <mark>first
+                place the container inside another parent element </mark>(grandparent, actually) and then apply the
+            properties to the grandparent</u>. So the HTML will look like this:</p>
+
+    <div class="grandParent">
+        <!-- Note the "grandParent" class is being used for the styling of IE or Edge browser. The the child with "contentBasedWidth" for other  -->
+        <div class="contentBasedWidth">container
+            <div>Fourscore and 20 years ago,</div>
+            <div>our fathers brought forth to this continent</div>
+            ...
+        </div>
+    </div>
+    <br>
+    <!-- strat of work around dive for IE -->
+
     <!-- content based "WIDHT" with *min-content*-->
-    <p>content based "WIDHT" with *min-content*</p>
+    <p>Content based "WIDHT" with *min-content*</p>
     <div class="contentBasedWidth-minContent">container
         <div>Fourscore and 20 years ago,</div>
         <div>our fathers brought forth to this continent</div>
