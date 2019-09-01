@@ -1,3 +1,18 @@
+header {
+  background-color: #195cd8;
+ }
+ header>div {
+  padding: 25px;
+ }
+ header>div:nth-of-type(odd) {
+  float: left;
+  clear: left;
+ }
+ header>div:nth-of-type(even) {
+  float: right;
+  clear: right;
+ }
+ 
 /* make a dive float and warp its "content" around the dive */
 header{
   width: 500px
