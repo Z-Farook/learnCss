@@ -1,3 +1,12 @@
+/* make a dive float and warp its "content" around the dive */
+header{
+  width: 500px
+}
+header>div {
+  padding: 25px;
+  float: right;
+}
+ 
 /* Box sizing: to see how much space an element actually takes (not just its content) */
 section{
     border: 2px solid rgb(231, 20, 12);
