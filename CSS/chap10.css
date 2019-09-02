@@ -1,6 +1,22 @@
+/* Make the odd elements float left and the even elements float right. */
+header>p {
+ display: none;
+}
 header {
-  background-color: #195cd8;
+  background-color:gray;
+  /* margin-bottom: 150px */
+  /* overflow: auto  */
+  /* This makes the whole header elements gray. *If this is not set * then if the 
+  content of its child elememnt is short in 'height' then the color will be not applied to the wohle header. There are also some other values
+  that can be se to this attribute. Like auto, hidden ...*/
  }
+/* this block of code is == to the previus */
+header::after {
+  content: "";
+  display: block; /*note this making the empty string block level*/
+  clear: both; /*note this cleariing the floating affect on divs clear*/
+ }
+
  header>div {
   padding: 25px;
  }
@@ -23,9 +39,9 @@ header>div {
 }
  
 /* Box sizing: to see how much space an element actually takes (not just its content) */
-section{
+/* section{
     border: 2px solid rgb(231, 20, 12);
-} 
+}  */
 
 * { /*With this rule, all sizing attributes will include the padding and border.*/
     box-sizing: border-box;
@@ -120,6 +136,4 @@ span {
 .container pre::after {
   content: " <== I am a block level dive with custom width ";
 }
-body {
-  background-color: gray;
-}
+ 
